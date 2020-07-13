@@ -346,7 +346,7 @@
 var gitalk = new Gitalk({
   clientID: 'e2cb69fb3e1dddd078d3',
   clientSecret: 'e0bcc43b1c6e302e2cac3792ad376c249c2489ae',
-  repo: 'Jackipline.github.io',
+  repo: 'https://Jackipline.github.io',
   owner: 'Jackipline',
   admin: ['Jackipline'],
   id: md5(window.location.pathname),
@@ -592,6 +592,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
+  
+<!-- 引入jquery 已经引入过了可去掉 -->
+<script type="text/javascript" src="//libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+
+<!-- 雪花特效 -->
+<script type="text/javascript">
+  var windowWidth = $(window).width();
+  if (windowWidth > 480) {
+    document.write('<script type="text/javascript" src="/snow.js"><\/script>');
+  }
+</script>
 </body>
 </html>
 

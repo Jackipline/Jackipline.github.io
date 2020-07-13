@@ -88,12 +88,6 @@
 				
 					<a class="github" target="_blank" href="https://github.com/Jackipline" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
 					<a class="mail" target="_blank" href="/jackiesi621@gmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
@@ -132,12 +126,6 @@
 				<div class="social">
 					
 						<a class="github" target="_blank" href="https://github.com/Jackipline" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 						<a class="mail" target="_blank" href="/jackiesi621@gmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -338,6 +326,24 @@
         <script async src="/busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
 </footer>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+	var now = new Date(); 
+	function createtime() { 
+		var grt= new Date("11/23/2018 20:00:00");//此处修改你的建站时间或者网站上线时间 
+		now.setTime(now.getTime()+250); 
+		days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+		hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+		if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+		mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+		seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+		snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+		document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+		document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+	} 
+	setInterval("createtime()",250);
+</script>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -565,6 +571,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     </div>
 
 </div>
+    <!-- 雪花特效3 -->
+    
+      <script type="text/javascript" src="/js/snow3.js"></script>
+    
   </div>
 </body>
 </html>
+

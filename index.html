@@ -42,7 +42,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #ffa500"></div>
+<div class="overlay" style="background: #000000"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -93,7 +93,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #ffa500"></div>
+  	<div class="overlay js-overlay" style="background: #000000"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -152,6 +152,505 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-走进鸟哥的LInux殿堂-第零章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+        
+        <a href="/2020/07/15/%E8%B5%B0%E8%BF%9B%E9%B8%9F%E5%93%A5%E7%9A%84LInux%E6%AE%BF%E5%A0%82-%E7%AC%AC%E9%9B%B6%E7%AB%A0/" class="archive-article-date">
+  	<time datetime="2020-07-15T02:37:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-15</time>
+</a>
+
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+        
+        <center><p>
+  
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/2020/07/15/%E8%B5%B0%E8%BF%9B%E9%B8%9F%E5%93%A5%E7%9A%84LInux%E6%AE%BF%E5%A0%82-%E7%AC%AC%E9%9B%B6%E7%AB%A0/">走进鸟哥的LInux殿堂--第零章</a>
+    </h1>
+  
+
+        </p></center>
+      
+        <p>==本系列专栏采取不一样的学习模式，总结可以让读书人对于书的内容进行整理、分类，但对于记忆的目的来说是很难的。而问问题的形式，不仅可以加深对知识点的理解；还可以提高对知识点的记忆程度，查缺补漏的效果也是存在的。其实很多时候，当我们总结了读书笔记后都会懒得去翻阅，或者自以为全部都掌握了。对于略显怠惰的自己，是不是该给自己来个连环30问刺激一下自己，鞭策一下自己。==<br><strong><em>本文适合阅读过《鸟哥的Linux私房菜：基础学习 第四版》的朋友进行复习巩固。</em></strong><br>任务记录：</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 第零章<ul>
+<li><input checked="" disabled="" type="checkbox"> 0.1</li>
+<li><input checked="" disabled="" type="checkbox"> 0.2</li>
+<li><input checked="" disabled="" type="checkbox"> 0.3</li>
+<li><input checked="" disabled="" type="checkbox"> 0.4  <h4 id="0-1"><a href="#0-1" class="headerlink" title="0.1"></a>0.1</h4></li>
+</ul>
+</li>
+<li>什么是计算机？(指令、中央处理器、数字与逻辑单元、生产存储）</li>
+<li>电脑的硬件组成部分，分为三个</li>
+<li>什么是CPU，其工作及其内部两个单元</li>
+<li>为什么加大内存即可加快系统性能</li>
+<li>CPU要处理的数据完全来自于？</li>
+<li>数据流进，流出是谁发的命令？</li>
+<li>CPU的两种架构</li>
+<li>RISC的特点</li>
+<li>CISC的特点</li>
+<li>位指CPU一次读取数据的最大量，单位bits </li>
+<li>不同X86架构CPU的差异？</li>
+<li>机箱设备主要通过什么链接？</li>
+<li>主板上有许多连接接口和适配卡</li>
+<li>辅助内存是？</li>
+<li>内存包括主存(RAM)、寄存器(register)、高速缓冲存储器(cache)</li>
+<li>0/1二进制单位为bit，8个bit为Byte(字节)。容量单位多用1024，速度单位多用1000。HZ是秒分之一。</li>
+<li>网路常用Mbps, CPU运算常用MHZ,GHZ</li>
+</ul>
+<hr>
+<h4 id="0-2"><a href="#0-2" class="headerlink" title="0.2"></a>0.2</h4><ul>
+<li>南桥负责什么接口？</li>
+<li>北桥整合到CPU后可与内存直接交流，加速</li>
+<li>CPU大量运算会高热，所以上方会有风扇</li>
+<li>什么是多核心CPU</li>
+<li>型号不同的CPU脚位不同</li>
+<li>除了微指令集来比较性能还有哪一点？(仅可比较同款CPU)</li>
+<li>QPI,DMI,AMD</li>
+<li>倍频是什么的比值?</li>
+<li>什么是前端总线速度(FSB)？</li>
+<li>CPU从内存取出的带宽如何计算？</li>
+<li>超线程：即将寄存器分成两部分，每一部分去竞争CPU运算单元。则可在非操作系统多任务切换情况下误以为CPU的核心翻倍。</li>
+<li>RAM只在通电时才能记录与使用，则称挥发性内存</li>
+<li>DDR通过一个周期增加传输次数提高频率，还有就是通过预读取技术来提升。这就是为什么DDR3的核心频率为200MHz情况下等效频率为1600MHz。而工作频率则是核心频率*2即为400MHz</li>
+<li>内存容量大，系统就不用常常清理不用的数据就会更快</li>
+<li>什么是多通道技术？</li>
+<li>静态随机存取内存(SRAM)为什么可以提升速度？</li>
+<li>ROM(只读存储器)：非挥发性内存</li>
+<li>固件(firmware):绑在硬件上的软件</li>
+<li>显卡(VGA:vedio graphics array),显卡规格现在主流是PCIe。</li>
+<li>分辨率，全彩像素与屏幕更新率即可知道所需显卡规格</li>
+<li>显卡与电脑屏幕的主流连接接口？</li>
+<li>电脑系统的存储设备？</li>
+<li>硬盘的构成以及如何运行？</li>
+<li>硬盘的存储单位及主流接口？</li>
+<li>SATA传输数据有10位编码，其中2位校验。则1Byte=10bit</li>
+<li>避免离散放数据对读写速度的影响所以有了SSD(固态硬盘)，但有写入次数限制，淘汰的快</li>
+<li>硬盘购买除接口外还需考虑什么？</li>
+<li>有多个x8插槽，卡该如何插呢？</li>
+<li>I/O位址相当于门牌号，IRQ中断相当于门牌到CPU的专门路径</li>
+<li>CMOS主要记录各种参数，记录要电力所以主板上有电池。</li>
+<li>BIOS开机执行，载入CMOS参数进入操作系统中。</li>
+<li>电源供应要考虑能源转换率</li>
+<li><h2 id="系统不稳定因素有？"><a href="#系统不稳定因素有？" class="headerlink" title="系统不稳定因素有？"></a>系统不稳定因素有？</h2><h4 id="0-3"><a href="#0-3" class="headerlink" title="0.3"></a>0.3</h4></li>
+<li>二进制与位序的关系？</li>
+<li>二进制与其他进制如何转换</li>
+<li><h2 id="写入时文字数据凭借编码对照表编写为数字后存入文件，反之就是读取显示。"><a href="#写入时文字数据凭借编码对照表编写为数字后存入文件，反之就是读取显示。" class="headerlink" title="写入时文字数据凭借编码对照表编写为数字后存入文件，反之就是读取显示。"></a>写入时文字数据凭借编码对照表编写为数字后存入文件，反之就是读取显示。</h2><h4 id="0-4"><a href="#0-4" class="headerlink" title="0.4"></a>0.4</h4></li>
+<li>为了克服硬件需要重复撰写控制码则有了OS(控制系统)</li>
+<li>操作系统只能用来管理CPU,内存，输入输出设备。无其他作用</li>
+<li>操作系统核心被保护，存放于内存中</li>
+<li>应用程序的开发参考操作系统提供的开发接口，不同系统无法使用</li>
+<li>系统调用接口就是用户态与核心态之间的联系</li>
+<li>核心的五大功能？</li>
+<li>OS必须提供开发接口以备新硬件的开发并须安装对应的驱动程序</li>
+</ul>
+<hr>
+
+      
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/15/%E8%B5%B0%E8%BF%9B%E9%B8%9F%E5%93%A5%E7%9A%84LInux%E6%AE%BF%E5%A0%82-%E7%AC%AC%E9%9B%B6%E7%AB%A0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'e2cb69fb3e1dddd078d3',
+  clientSecret: 'e0bcc43b1c6e302e2cac3792ad376c249c2489ae',
+  repo: 'Jackipline.github.io',
+  owner: 'Jackipline',
+  admin: ['Jackipline'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
+  
+    <article id="post-车评2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+        
+        <a href="/2020/07/14/%E8%BD%A6%E8%AF%842/" class="archive-article-date">
+  	<time datetime="2020-07-14T05:10:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-14</time>
+</a>
+
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+        
+        <center><p>
+  
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/2020/07/14/%E8%BD%A6%E8%AF%842/">车评2</a>
+    </h1>
+  
+
+        </p></center>
+      
+        <h3 id="本次车评是关于裸车价-本次使用厂商指导价，可能会有误差-17万元及以下的轿车，所获得的评价来自于三方数据的集合。"><a href="#本次车评是关于裸车价-本次使用厂商指导价，可能会有误差-17万元及以下的轿车，所获得的评价来自于三方数据的集合。" class="headerlink" title="本次车评是关于裸车价(本次使用厂商指导价，可能会有误差)17万元及以下的轿车，所获得的评价来自于三方数据的集合。"></a>本次车评是关于裸车价(本次使用厂商指导价，可能会有误差)17万元及以下的轿车，所获得的评价来自于三方数据的集合。</h3><ul>
+<li>视频资源来自：<ul>
+<li>38号车评中心。</li>
+<li>爱极客视频</li>
+<li>POVDrive</li>
+</ul>
+</li>
+<li>文字资源来自：<ul>
+<li>汽车之家</li>
+<li>知乎</li>
+<li>网易汽车</li>
+<li>腾讯汽车</li>
+</ul>
+</li>
+</ul>
+<p><strong><em>以上数据仅供参考，具体需要去4S店亲自试驾</em></strong><br>品牌：本田，丰田，尼桑，福特，雪佛兰，吉利，大众，长城</p>
+<hr>
+
+      
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">汽车</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">轿车</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/汽车//" class="article-tag-list-link color3">汽车</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/14/%E8%BD%A6%E8%AF%842/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'e2cb69fb3e1dddd078d3',
+  clientSecret: 'e0bcc43b1c6e302e2cac3792ad376c249c2489ae',
+  repo: 'Jackipline.github.io',
+  owner: 'Jackipline',
+  admin: ['Jackipline'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
+  
+    <article id="post-车评" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+        
+        <a href="/2020/07/14/%E8%BD%A6%E8%AF%84/" class="archive-article-date">
+  	<time datetime="2020-07-14T02:00:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-14</time>
+</a>
+
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+        
+        <center><p>
+  
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/2020/07/14/%E8%BD%A6%E8%AF%84/">车评</a>
+    </h1>
+  
+
+        </p></center>
+      
+        <h3 id="本次车评是关于裸车价-本次使用厂商指导价，可能会有误差-17万元及以下的suv，所获得的评价来自于三方数据的集合。"><a href="#本次车评是关于裸车价-本次使用厂商指导价，可能会有误差-17万元及以下的suv，所获得的评价来自于三方数据的集合。" class="headerlink" title="本次车评是关于裸车价(本次使用厂商指导价，可能会有误差)17万元及以下的suv，所获得的评价来自于三方数据的集合。"></a>本次车评是关于裸车价(本次使用厂商指导价，可能会有误差)17万元及以下的suv，所获得的评价来自于三方数据的集合。</h3><ul>
+<li>视频资源来自：<ul>
+<li>38号车评中心。</li>
+<li>爱极客视频</li>
+<li>POVDrive</li>
+</ul>
+</li>
+<li>文字资源来自：<ul>
+<li>汽车之家</li>
+<li>知乎</li>
+<li>网易汽车</li>
+<li>腾讯汽车</li>
+</ul>
+</li>
+</ul>
+<p><strong><em>以上数据仅供参考，具体需要去4S店亲自试驾</em></strong><br>品牌：本田，丰田，尼桑，福特，雪佛兰，吉利，大众，长城</p>
+<hr>
+<p>科普<br>TURBO：即涡轮增压，涡轮增压器的最大优点是能在不加大发动机排量就能较大幅度地提高发动机的功率及扭力，一般而言，加装增压器后的发动机的功率及扭矩要增大20%—30%。涡轮增压器的缺点是滞后，即由于叶轮的惯性作用对油门骤时变化反应迟缓，使发动机延迟增加或减少输出功率，这对于要突然加速或超车的汽车而言，瞬间会有点提不上劲的感觉。<br>CVT：即无级变速箱<br>MT：即手动变速箱<br>TSI：双增压发动机，大功率、低转速大扭矩<br>国VI：即国六的排放标准<br><strong>1.东风本田XRV</strong><br>数据：1.5L涡轮增压，177马力，国VI，2020款220TURBO CVT旗舰版：17.59W</p>
+<ul>
+<li>优点：<ol>
+<li>本田传统外观</li>
+<li>乘坐空间和储物空间较大</li>
+<li>方向盘偏沉稳</li>
+<li>油耗极少</li>
+</ol>
+</li>
+<li>缺点：<ol>
+<li>悬架问题，过减速带弹跳大</li>
+<li>噪音大，尤其上高速时胎噪和风噪大</li>
+<li>内饰一般</li>
+</ol>
+</li>
+</ul>
+<hr>
+<p><strong>2.东风本田CRV</strong><br>数据：1.5T 2021款 240TURBO CVT两驱舒适版 5门5座紧凑型:15.58W</p>
+<ul>
+<li>优点：<ol>
+<li>空间很大</li>
+<li>转向手感好无虚位，但是转弯时会侧倾(毕竟是买菜车)</li>
+<li>油耗很小</li>
+<li>动力强劲</li>
+<li>内饰同价位不错</li>
+</ol>
+</li>
+<li>缺点：<ol>
+<li>方向盘手感差，易误触</li>
+<li>做工问题：后备箱缝隙大，不对称。主驾驶位置漏风</li>
+<li>水温上来慢</li>
+<li>隔音差。本田都是</li>
+<li>无级变速箱仍会有顿挫</li>
+<li>时速显示屏易刮花</li>
+<li>座椅对肩部支撑不足</li>
+<li>油箱小</li>
+<li>地盘过减速带不舒服</li>
+</ol>
+</li>
+</ul>
+<hr>
+<p><strong>3.广汽本田皓影</strong><br>数据：1.5T 2020款 240TURBO CVT两驱精英版：17.98W</p>
+<ul>
+<li>优点：<ol>
+<li>百公里平均8L</li>
+<li>外观好评多，推荐黑色酷</li>
+<li>空间大</li>
+<li>动力不错，有推背感</li>
+<li>全系标配灯很亮</li>
+</ol>
+</li>
+<li>缺点：<ol>
+<li>起步急加速有明显的发动机轰鸣声</li>
+<li>前后都没有雷达，侧方停车和倒丰时需要适应</li>
+<li>没有电尾门，安全气囊少，不如丰田标配六气囊</li>
+<li>新车无优惠，性价比低</li>
+</ol>
+</li>
+</ul>
+
+      
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">汽车</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">评价</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/汽车//" class="article-tag-list-link color3">汽车</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/14/%E8%BD%A6%E8%AF%84/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'e2cb69fb3e1dddd078d3',
+  clientSecret: 'e0bcc43b1c6e302e2cac3792ad376c249c2489ae',
+  repo: 'Jackipline.github.io',
+  owner: 'Jackipline',
+  admin: ['Jackipline'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
   
     <article id="post-第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -349,6 +848,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">汽车</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">评价</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">轿车</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
